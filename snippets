@@ -1,77 +1,86 @@
-<pre>
-
 https://www.w3schools.com/jsref/
 
-<pre><h4><b>asdfads</b></h4>var playerone = 400;
+*************************
+SHOW GRATER VALUE 
+*************************
+<script>
+var playerone = 400;
 var playertwo = 100;
 
 //var highscore = (playerone > playertwo) ? playerone : playertwo;
 
 if(playerone > playertwo) {
-	console.log('playerone -', playerone)
+	document.write('playerone - ', playerone)
 } else {
-	console.log('playertwo -', playertwo)
+	document.write('playertwo - ', playertwo)
 }
 
 // playerone - 400
-</pre>
-<hr>
+</script>
 
-<pre>
+*************************
+WHILE LOOP EXAMPLE
+*************************
+<script>
 var a = 1;
 
 while(a < 6) {	
-	console.log(a)
+	document.write(a, '<br>')
 	a++;
 }
+</script>
 
 // 1
 // 2
 // 3
 // 4
 // 5
-</pre>
-<hr>
-<pre>
+
+*************************
+IF CONDITION EXAMPLE
+*************************
+<script>
 var iceCream = 'chocolate';
 if (iceCream === 'chocolate') {
   alert('Yay, I love chocolate ice cream!');    
 } else {
   alert('Awwww, but chocolate is my favorite...');    
 }
+</script>
 
 // Yay, I love chocolate ice cream!
-</pre>
-<hr>
-<pre>
-Array concat()
 
+*************************
+TWO VALUES CONCATIN ARRAY
+*************************
+<script>
 var a = 'Krishna';
 var b = 'Mohan';
 
 var result = a.concat(b);
-
 document.write(result)
+</script>
 
 //KrishnaMohan
-</pre>
-<hr>
-<pre>
 
-</pre>
-<hr>
-<pre>
+*************************
+THREE VALUES CONCATIN ARRAY
+*************************
+<script>
 var a = 'krishna ';
 var b = 'mohan ';
 var d = 'vishwanath'
 var c = a.concat(b, d);
 
 document.write(c)
+</script>
 
 // krishna mohan vishwanath
-</pre>
-<hr>
-<pre>
+
+*************************
+REPLACE ARRAY LIST USING COPYWITHIN
+*************************
+<script>
 <p id='demo'></p>
 <button onclick='myfun()'>Click me</button>
 
@@ -82,12 +91,17 @@ document.getElementById('demo').innerHTML = colors;
 function myfun() {
 	document.getElementById('demo').innerHTML = colors.copyWithin(2,0)
 }
+
+</script>
+
 // orange,green,yellow,blue
 
 // orange,green,orange,green
-</pre>
-<hr>
-<pre>
+
+
+*************************
+FILTER THE ARRAY
+*************************
 
 <h1 id="demo"></h1>
 <button onclick="myfunction()">Submit</button>
@@ -104,23 +118,45 @@ function myfunction() {
 
 // 20,28,32
 
-<hr>
+*************************
+ONCLICK DOM GET ALERT
+*************************
 
+<script>
 document.querySelector('html').onclick=function() {
 	alert('This is alert box...')
 }
+</script>
 
-<hr>
+// This is alert box...
 
+*************************
+
+*************************
+<script>
 function multiple(num1, num2) {
 	var result = num1 * num2
-	return result
+	
+	document.write('num1' + '*' + 'num2' + ' = ' + result + '<br>');
+	
+	//var y = document.write('num1' + '*' + 'num2' + ' = ' + result);
+	//var z = document.write('num1' + '*' + 'num2' + ' = ' + result);
+	
 }
-console.log(multiple(4,6))
-console.log(multiple(5,9))
-console.log(multiple(8,10))
+multiple(4,5)
+multiple(7,9)
+multiple(4,8)
+multiple(9,2)
+</script>
 
-<hr>
+//num1*num2 = 20
+num1*num2 = 63
+num1*num2 = 32
+num1*num2 = 18
+
+*************************
+DYNAMIC ADD <H1> <BR> -- +, -, /, *
+*************************
 
 var a = 10;
 var b = 20;
@@ -146,7 +182,18 @@ document.write('resultDivide :', resultDivide)
 document.write(spacer)
 document.write('resultModules :', resultModules)
 document.write(mainClose)
-<hr>
+
+
+//resultAddition :30
+resultSubstraction :-10
+resultMultiple :200
+resultDivide :0.5
+resultModules :10
+
+*************************
+BASIC LOOP
+*************************
+
 var list = ['one','two','three','four']
 
 for(var i = 0; i < list.length; i++) {
@@ -158,7 +205,9 @@ one
 two
 three
 four
-<hr>
+*************************
+SPLIT AND JOIN EXAMPLE
+*************************
 
 var para = "afdadfasdf asdfasdf asdfasdfs asdfasdfd ~ asdfasdf asdfads asdfaspoi qweripoiuper qwoeirupoiuewqr weu oipoqwer ~ pklja;lasjdfipoi asdoiufpasoiu asdfoias dasiopudfopuasdf opiupodasuf ~ asoiduaosdfljlpasjdf saofi asdofu asd";
 
@@ -168,30 +217,39 @@ var finalpara = firstpara.join('<br>')
 document.write(finalpara)
 
 //
-
 afdadfasdf asdfasdf asdfasdfs asdfasdfd 
 asdfasdf asdfads asdfaspoi qweripoiuper qwoeirupoiuewqr weu oipoqwer 
 pklja;lasjdfipoi asdoiufpasoiu asdfoias dasiopudfopuasdf opiupodasuf 
 asoiduaosdfljlpasjdf saofi asdofu asd
-<hr>
+
+*************************
+CONCAT EXAMPLE II
+*************************
 
 var txt1 = 'Vishwanath ';
 txt1 += 'Krishna Mohan';
 
 document.write(txt1)
 
-//
-Vishwanath Krishna Mohan
+//Vishwanath Krishna Mohan
 
-<hr>
+*************************
+GET THE POSITION NO USING INDEXOF
+*************************
 
+<script>
 var words = 'India is my country';
 
 var position = words.indexOf('my');
 
 document.write(position)
+</script>
 
-<hr>
+// 9
+
+*************************
+
+*************************
 
 var dob = new Date(1979,11,11);
 
@@ -200,7 +258,10 @@ var dobday = dob.getDay()
 document.write(dobday);
 
 // 2
-<hr>
+
+*************************
+
+*************************
 
 <img src="https://www.google.com/logos/doodles/2019/spring-equinox-2019-northern-hemisphere-5139135894388736.2-s.png" id="mypic">
 
