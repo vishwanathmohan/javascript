@@ -250,9 +250,9 @@ window.onload = function() {
 </html>
 
 
-<hr>
+*************************
 DYNAMIC BOX ADD ON Click
-
+*************************
 <style>
 .box {
 width:120px;
@@ -273,10 +273,12 @@ function addNew() {
 	document.body.appendChild(div);
 	console.log('DIV---:', div)
 }
-</script>
 
-<hr>
+// ON CLICK ADD BOX DYNAMICALLY
+
+*************************
 DYNAMIC INPUT FIELDS ADD ADD AND REMOVE
+*************************
 
 <div id='content'></div>
 <button onclick='addRow()'>Add New</button>
@@ -293,11 +295,12 @@ function addRow() {
 function removeRow(input) {
     document.getElementById('content').removeChild(input.parentNode);
 }
-</script>
-<hr>
 
+// MULTI INPUTS ADD ON CLICK
+
+*************************
 DIV HIDE SHOW
-
+*************************
 <button onclick='myfun()'>Show/Hide</button>
 <h1 id='demo'>Heading one</h1>
 
@@ -310,11 +313,13 @@ function myfun() {
 		x.style.display = 'none'
 	}
 }
-</script>
 
-<hr>
+// display block
+// display none
 
+*************************
 LIKE DISLIKE 
+*************************
 
 <div class='one' onclick='myfun(this)'></div>
 <style>
@@ -322,33 +327,35 @@ LIKE DISLIKE
 .two {background:green; width:50px; height:50px;}
 </style>
 
-<script>
+
 function myfun(x) {
 	x.classList.toggle('two');
 }
-</script>
-<hr>
 
+// oncilck change the bg/ like - dislike
+
+*************************
 TOGGLE TEXT
-
+*************************
 <button onclick='myfun(this)'>Toggle text</button>
-<div id='demo'></div>
+<h1 id='demo'></h1>
 
-<script>
 function myfun() {
 	var x = document.getElementById('demo');
 	
-	if(x.innerHTML === '<h1>Hello</h1>') {
-		x.innerHTML = '<h1>World</h1>';
+	if(x.innerHTML === 'Hello') {
+		x.innerHTML = 'World';
 	} else {
-		x.innerHTML = '<h1>Hello</h1>';
+		x.innerHTML = 'Hello';
 	}
 }
-</script>
-<hr>
 
+// Hello
+// World
+
+*************************
 ONCLICK CHANGE CLASS
-
+*************************
 <button onclick='myfun()'>Click here</button>
 <div class='one' id='demo'>This is dynamic div</div>
 <style>
@@ -361,29 +368,33 @@ function myfun() {
 var x = document.getElementById('demo')
 	x.classList.toggle('two');
 }
-</script>
-<hr>
-BULB ON OFF
 
+// This is dynamic div
+*************************
+BULB ON OFF
+*************************
 <button onclick='document.getElementById("myImg").src="https://www.w3schools.com/js/pic_bulboff.gif"'>OFF</button>
 <img src='https://www.w3schools.com/js/pic_bulboff.gif' id='myImg'>
 <button onclick='document.getElementById("myImg").src="https://www.w3schools.com/js/pic_bulbon.gif"'>ON</button>
 
-<hr>
-ADD CLASS
 
+*************************
+ADD CLASS
+*************************
 <p id='demo'>This is the first para</p>
 <button onclick='myfun()'>Click</button>
-<script>
+
 function myfun() {
 	var x = document.getElementById('demo');
 	x.style.color='red';
 	x.style.fontSize='30';
 }
-</script>
-<hr>
-ONCLICK DISPLAY NONE
 
+// This is the first para
+
+*************************
+ONCLICK DISPLAY NONE
+*************************
 <p id='demo'>This will be disappear</p>
 <button onclick='myfun()'>Click here</button>
 <script>
@@ -391,22 +402,25 @@ function myfun() {
 	var x = document.getElementById('demo');
 	x.style.display = 'none';
 }
-</script>
-<hr>
+
+// --- BLANK--
+*************************
 HIDE PROPERTY SHOW WHEN CLICK
+*************************
 
 <p id='demo' style='display:none'>This is the para</p>
 <button onclick='myfun()'>Click here</button>
-<script>
+
 function myfun() {
 	var x = document.getElementById('demo');
 	x.style.display = 'block';
 }
-</script> 
-<hr>
 
+// This is the para
+
+*************************
 CONCAT EXAMPLE
-
+*************************
 <p id='demo'></p>
 <button onclick='myfun()'>Click here</button>
 <script>
@@ -417,35 +431,38 @@ function myfun() {
 var z = document.getElementById('demo').innerHTML = x.concat(y);
 console.log(x.concat(y))
 }
-</script>
-<hr>
 
+*************************
 INDEX OF EXAMPLE 1
+*************************
+
+function myfun() {
+	var x = document.getElementById('demo').innerHTML;
+	result = x.indexOf('my')	
+	document.getElementById('result').innerHTML = result;
+}
 
 <h1 id='demo'>India is my country and all indians are</h1>
 <h1 id='result'></h1>
 <button onclick='myfun()'>Click</button>
-<script>
 
-function myfun() {
-	var x = document.getElementById('demo').innerHTML;
-	result = x.indexOf('my')
-	document.getElementById('result').innerHTML = result;
-}
-</script>
 
+// 9
+
+*************************
 INDEX OF EXAMPLE 2
+*************************
 
-<script>
 var list = 'this is news from this';
 
 var i = list.indexOf('news')
 
 document.write(i)
-</script>
-<hr>
-REPLACE THE TEXT
 
+// 8
+*************************
+REPLACE THE TEXT
+*************************
 <button onclick='myfun()'>Click me</button>
 <h1 id='demo'>Welcome to Microsoft</h1>
 
@@ -455,10 +472,11 @@ function myfun() {
 	var txt = x.replace('Microsoft','Google');
 	document.write('<h1>'+txt+'</h1>')
 }
-</script>
-<hr>
-ONCLICK LOWER TO UPPER CASE
+// Google
 
+*************************
+ONCLICK LOWER TO UPPER CASE
+*************************
 <p id='demo'>hello world</p>
 <button onclick='myfun()'>Click here</button>
 <script>
@@ -467,11 +485,13 @@ function myfun() {
 	result = x.toUpperCase();
 	document.write(result);
 }
-</script>
-<hr>
-MERGE TWO ARRAYS WITH MAP
 
-<script>
+// HELLO WORLD
+
+*************************
+MERGE TWO ARRAYS WITH MAP
+*************************
+
 var a1 = ["a", "b", "c"];
 var a2 = [1, 2, 3];
 var a3 = a1.map(function(e,i)
