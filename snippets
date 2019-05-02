@@ -747,3 +747,22 @@ if(item == 'ice cream') {
 }
 
 // Yey you are right!!
+
+**************************
+RANDOM BACKGROUND ON CLICK
+**************************
+
+<script>
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+function setRandomColor() {
+	document.body.style.backgroundColor = getRandomColor();
+}
+</script>
+<button onclick="setRandomColor()">Random Color</button>
