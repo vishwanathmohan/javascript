@@ -766,3 +766,30 @@ function setRandomColor() {
 }
 </script>
 <button onclick="setRandomColor()">Random Color</button>
+
+ARRAY REVERSE
+
+<script>
+let x = ['aa','bb','cc'];
+
+const revArray = x.reverse();
+
+document.write(revArray);
+
+</script>
+
+REVERSE STRING
+
+<script>
+let x = 'Krishna mohan';
+
+function reverseString() {
+const splitString = x.split('');
+const reverseArray = splitString.reverse('');
+const joinArray = reverseArray.join('')
+
+return joinArray;
+}
+
+console.log(reverseString());
+</script>
