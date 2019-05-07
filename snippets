@@ -768,7 +768,7 @@ function setRandomColor() {
 <button onclick="setRandomColor()">Random Color</button>
 
 **************************
-ARRAY REVERSE
+REVERSE ARRAY
 **************************
 
 <script>
@@ -800,11 +800,13 @@ console.log(reverseString());
 
 
 **************************
-
+GET UNIQUE NUMBERS FROM ARRAY
 **************************
+let items = [4,5,6,7,8,4,5,6,7,8,9,10];
 
+let uniqueNum = Array.from(new Set(items))
 
-
+document.write(uniqueNum);
 
 **************************
 
